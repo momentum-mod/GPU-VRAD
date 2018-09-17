@@ -1,4 +1,5 @@
 #include "raytrace.h"
+#include "math.h"
 
 CRayTracingEnvironment RTEnv;
 
@@ -102,8 +103,8 @@ int CacheOptimizedTriangle::ClassifyAgainstAxisSplit(int split_plane, float spli
 	float maxc = minc;
 	for (int v = 1; v<3; v++)
 	{
-		minc = min(minc, Vertex(v)[split_plane]);
-		maxc = max(maxc, Vertex(v)[split_plane]);
+		minc = fmin(minc, Vertex(v)[split_plane]);
+		maxc = fmax(maxc, Vertex(v)[split_plane]);
 	}
 
 	if (minc >= split_value)

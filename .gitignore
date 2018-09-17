@@ -72,5 +72,4 @@ voice_ban.dt
 *.ib_pdb_index
 *.cfg
 .idea/
-CMakeLists.txt
 *.exe

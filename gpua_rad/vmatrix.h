@@ -101,7 +101,7 @@ public:
 	void		Init(const matrix3x4_t& matrix3x4);
 
 	inline void Identity();
-	inline Vector VMatrix::VMul4x3(const Vector &vVec) const;
+	inline Vector VMul4x3(const Vector &vVec) const;
 };
 
 //-----------------------------------------------------------------------------

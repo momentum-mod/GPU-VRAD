@@ -1,4 +1,5 @@
 #include "poly.h"
+#include "math.h"
 
 // doesn't seem to need to be here? -- in threads.h
 //extern int numthreads;

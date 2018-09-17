@@ -1,4 +1,5 @@
 #include "trace.h"
+#include <algorithm>
 
 CTrace::CTrace(const char * filename) : CBSP(filename)
 {

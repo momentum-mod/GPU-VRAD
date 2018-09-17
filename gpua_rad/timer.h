@@ -12,7 +12,7 @@ public:
 	~CTimer();
 	void End();
 private:
-	std::chrono::time_point<std::chrono::steady_clock> m_tpscStart;
+	std::chrono::time_point<std::chrono::system_clock> m_tpscStart;
 	const char* m_szIdentifier;
 	bool m_bEnded;
 };
